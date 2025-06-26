@@ -111,7 +111,8 @@ Type 2 Query	    O(log n)
 
 Total	            O((n + q) × log n)
 
- So this gives you significant speed-up for Type 2 queries, while still keeping Type 1 manageable unless the range is huge.
+ So this gives you significant speed-up for Type 2 queries, while still keeping Type 1 manageable 
+ unless the range is huge.
 
 '''
 

@@ -45,7 +45,8 @@ class SegmentTree:
             return node.data
         elif node.end < qsi or node.start > qei:
             return 0
-        return self._query(node.left, qsi, qei) + self._query(node.right, qsi, qei)
+        return (self._query(node.left, qsi, qei) + \
+                self._query(node.right, qsi, qei))
 
     def update(self, index, value):
         self.root.data = self._update(self.root, index, value)

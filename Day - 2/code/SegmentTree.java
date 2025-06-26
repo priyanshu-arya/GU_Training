@@ -31,22 +31,22 @@ public class SegmentTree {
         return node;
     }
 
-    public void display() {
-        display(this.root);
-    }
+    // public void display() {
+    //     display(this.root);
+    // }
 
-    private void display(Node node) {
-        if (node == null) return;
+    // private void display(Node node) {
+    //     if (node == null) return;
 
-        String left = node.left != null ? "[" + node.left.start + "-" + node.left.end + "] => " + node.left.data : "No left child";
-        String right = node.right != null ? "[" + node.right.start + "-" + node.right.end + "] => " + node.right.data : "No right child";
-        String curr = "[" + node.start + "-" + node.end + "] => " + node.data;
+    //     String left = node.left != null ? "[" + node.left.start + "-" + node.left.end + "] => " + node.left.data : "No left child";
+    //     String right = node.right != null ? "[" + node.right.start + "-" + node.right.end + "] => " + node.right.data : "No right child";
+    //     String curr = "[" + node.start + "-" + node.end + "] => " + node.data;
 
-        System.out.println(left + " <= " + curr + " => " + right + "\n");
+    //     System.out.println(left + " <= " + curr + " => " + right + "\n");
 
-        display(node.left);
-        display(node.right);
-    }
+    //     display(node.left);
+    //     display(node.right);
+    // }
 
     public int query(int qsi, int qei) {
         return query(this.root, qsi, qei);
@@ -89,7 +89,7 @@ public class SegmentTree {
         int[] arr = {1, 3, 5, 7, 9, 11};
         SegmentTree st = new SegmentTree(arr);
 
-        st.display();
+        // st.display();
 
         System.out.println("Query(1, 3): " + st.query(1, 3)); // 15
         st.update(1, 10);
@@ -98,6 +98,6 @@ public class SegmentTree {
         st.updateRange(3, 5, 20);
         System.out.println("Query(1, 3) after range update: " + st.query(1, 3)); // 22
 
-        st.display();
+        // st.display();
     }
 }
