@@ -74,11 +74,11 @@ public class SegmentTree {
     private int update(Node node, int index, int value) {
         if (index < node.start || index > node.end) return node.data;
 
-        if (node.start == node.end) {
+        
+if (node.start == node.end) {
             node.data = value;
             return node.data;
         }
-
         int left = update(node.left, index, value);
         int right = update(node.right, index, value);
         node.data = left + right;
