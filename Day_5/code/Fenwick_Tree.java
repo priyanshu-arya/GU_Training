@@ -1,4 +1,4 @@
-package Day_4.code;
+package Day_5.code;
 
 class Fenwick_Tree {
     int[] tree;

@@ -1,4 +1,4 @@
-package Sliding_Window.code.Solution_3;
+package Day_4.Sliding_Window.code.Solution_3;
 
 import java.util.*;
 
