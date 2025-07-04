@@ -83,7 +83,6 @@ def count_special_pairs(n:int, a: List[int]) -> int:
     return ans
 
 
-
 # Sample Input 1
 n = 7
 a = [1, 2, 1, 1, 2, 2, 1]
